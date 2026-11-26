@@ -1,0 +1,16 @@
+/* Shared styles for gzgs.ae. Most styling lives inline in each page. */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; }
+button:disabled { opacity: .6; cursor: wait; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #2F5BA3; outline-offset: 2px;
+}
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .mosaic figure img { transition: none; }
+}
+@media (max-width: 640px) {
+  header nav { font-size: 13px !important; gap: 2px 18px !important; }
+}
